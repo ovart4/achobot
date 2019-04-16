@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 
 from hermes_python.hermes import Hermes
-import hermes_python 
-import requests
 
 MQTT_IP_ADDR = "localhost"
 MQTT_PORT = 1883
@@ -14,7 +12,6 @@ def intent_received(hermes, intent_message):
 
     if intent_message.intent.intent_name == 'josenka:Suma':
         sentence = 'Tu lo que quieres es sumar'
-        print(sentence)
 
     else:
         return
