@@ -12,7 +12,8 @@ def intent_received(hermes, intent_message):
 
     if intent_message.intent.intent_name == 'josenka:Suma':
         sentence = 'Tu lo que quieres es sumar'
-
+    elif intent_message.intent.intent_name == 'Suma':
+        sentence = 'Tu lo que quieres es sumar'
     else:
         return
     
@@ -20,4 +21,4 @@ def intent_received(hermes, intent_message):
 
 
 with Hermes(MQTT_ADDR) as h:
-h.subscribe_intents(intent_received).start()
+    h.subscribe_intents(intent_received).start()
