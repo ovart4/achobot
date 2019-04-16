@@ -17,13 +17,10 @@ def intent_received(hermes, intent_message):
     else:
         return
     
-    primer_numero = intent_message.slots.firstTerm.first()
-    segundo_numero = intent_message.slots.secondTerm.first()
+    primer_numero = intent_message.slots.firstTerm.first().value
+    segundo_numero = intent_message.slots.secondTerm.first().value
     
-    if primer_numero is not None:
-        sentence += primer_numero.value
-    if segundo_numero is not None:
-        sentence +=  'y ' + segundo_numero.value
+    sentence += primer_numero 'y ' + segundo_numero
     
     
     
