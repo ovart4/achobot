@@ -12,8 +12,6 @@ def intent_received(hermes, intent_message):
 
     if intent_message.intent.intent_name == 'josenka:Suma':
         sentence = 'Quieres sumar '
-    elif intent_message.intent.intent_name == 'Suma':
-        sentence = 'El resultado es '
     else:
         return
     
