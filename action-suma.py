@@ -19,9 +19,13 @@ def intent_received(hermes, intent_message):
     segundo = intent_message.slots.secondTerm.first().value
     suma = primer + segundo
     
-    sentence += " : {}".format(str(primer))
-    sentence += " y : {}".format(str(segundo))
-    sentence += " es : {}".format(str(suma))
+    entero1 = int(primer)
+    entero2 = int(segundo)
+    entero3 = int(suma)
+    
+    sentence += " : {}".format(str(entero1))
+    sentence += " y : {}".format(str(entero2))
+    sentence += " es : {}".format(str(entero3))
     
     
     
