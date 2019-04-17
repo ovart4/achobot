@@ -20,7 +20,7 @@ def intent_received(hermes, intent_message):
     
     #sentence += primer_numero 'y ' + segundo_numero
     
-    sentence += 'mucho ' + primer
+    sentence += "Turning on lights in : {}".format(str(primer))
     
     
     
