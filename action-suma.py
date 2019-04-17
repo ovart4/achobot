@@ -20,8 +20,8 @@ def intent_received(hermes, intent_message):
     suma = primer + segundo
     
     sentence += " ".format(str(primer))
-    sentence += " y ".format(str(segundo))
-    sentence += " es ".format(str(suma))
+    #sentence += " y ".format(str(segundo))
+    #sentence += " es ".format(str(suma))
     
     
     
