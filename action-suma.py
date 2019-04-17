@@ -15,8 +15,8 @@ def intent_received(hermes, intent_message):
     else:
         return
     
-    #primer = intent_message.slots.firstTerm.first().value
-    #segundo = intent_message.slots.secondTerm.first().value
+    primer = intent_message.slots.firstTerm.first().value
+    segundo = intent_message.slots.secondTerm.first().value
     
     #sentence += primer_numero 'y ' + segundo_numero
     
