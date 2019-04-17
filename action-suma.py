@@ -11,16 +11,17 @@ MQTT_ADDR = "{}:{}".format(MQTT_IP_ADDR, str(MQTT_PORT))
 def intent_received(hermes, intent_message):
 
     if intent_message.intent.intent_name == 'josenka:Suma':
-        sentence = 'Quieres sumar '
+        sentence = 'La suma de'
     else:
         return
     
     primer = intent_message.slots.firstTerm.first().value
     segundo = intent_message.slots.secondTerm.first().value
+    suma = primer + segundo
     
-    #sentence += primer_numero 'y ' + segundo_numero
-    
-    sentence += "Turning on lights in : {}".format(str(primer))
+    sentence += " ".format(str(primer))
+    sentence += " y ".format(str(segundo))
+    sentence += " es ".format(str(suma))
     
     
     
